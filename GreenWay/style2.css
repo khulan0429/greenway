@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+        body {
+            background-color: #f7f7f7;
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            margin-bottom: 20px;
+        }
+        .vehicle-header {
+            background-color: #fff;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .vehicle-images {
+            margin-bottom: 20px;
+        }
+        .vehicle-images img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .vehicle-info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .price-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .thumbnail {
+            cursor: pointer;
+            max-width: 100px; /* Adjust the size as needed */
+            margin: 5px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .thumbnail img {
+            width: 100%;
+            height: auto;
+        }
+        .overview-item, .finance-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+    
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  .card {
+    width: calc(25% - 20px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+  }
+  .card img {
+    width: 100%;
+    display: block;
+  }
+  .details {
+    padding: 15px;
+  }
+  /* Additional styles... */

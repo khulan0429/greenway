@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 33.33%;
+}
+
+.carousel img, .vehicle-style img {
+  max-height: 300px;
+  object-fit: contain;
+  width: 100%;
+}
+
+#loginButton, #filterButton, #likedButton, .btn-primary, .page-link {
+  border: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#likedButton .fa-heart {
+  color: red;
+}
+
+.vehicle-style img:hover, .btn-primary:hover {
+  transform: scale(1.05);
+}
+
+.custom-background {
+  background-image: url('your-image-url-here');
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(30%);
+}
+
+h2, .vehicle-style h4, p {
+  font-family: 'Playfair Display', serif;
+  color: #333;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.container {
+  border-radius: 15px;
+}
+
+.col-md-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.car-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.car {
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  max-width: 200px;
+  text-align: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+.why-section {
+  display: flex;
+  justify-content: space-between; /* Changed to space-between for even spacing */
+  align-items: center;
+  background-color: #282c34; /* Updated color for a modern dark theme */
+  color: #adbac7; /* Softer white for better readability */
+  padding: 40px; /* Increased padding for more space */
+  text-align: center;
+  gap: 20px; /* Add gaps between flex items */
+}
+.feature img {
+  width: 80px; /* Example size, adjust as needed */
+  height: auto;
+  margin-bottom: 20px; /* Increased space */
+  filter: brightness(0) invert(1); /* Makes the SVG icons white */
+}
+.feature h3 {
+  margin-bottom: 10px; /* Increased space */
+  font-size: 1.5rem; /* Larger font size */
+  font-weight: 600; /* Bolder font */
+}
+
+.feature p {
+  font-size: 1rem; /* Adjusted font size for paragraph */
+  opacity: 0.8; /* Slightly transparent text */
+  max-width: 240px; /* Max width for better readability */
+  margin: auto; /* Centering if there is any width */
+}
+
+.browse-button {
+  background-color: #2296f3; /* Bright blue for contrast */
+  color: #fff;
+  border: 2px solid transparent; /* Prepared for hover effect */
+  padding: 15px 30px; /* Larger padding for a bigger button */
+  margin-top: 30px; /* Increased space */
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.browse-button:hover {
+  background-color: transparent;
+  border-color: #2296f3; /* Border color changes on hover */
+  color: #2296f3;
+}
+/* ... (rest of your CSS) ... */
+
+/* Improved responsiveness */
+@media (max-width: 768px) {
+  .why-section,
+  .dual-promo-container {
+    flex-direction: column;
+  }
+
+  .feature,
+  .promo-block {
+    width: 100%; /* Full width on small screens */
+    margin-bottom: 20px; /* Consistent space between blocks */
+  }
+
+  .feature img {
+    margin: 0 auto; /* Center the image horizontally */
+  }
+
+  .btn {
+    /* Adjust button positioning for mobile if needed */
+    bottom: 20px;
+    left: 20px;
+  }
+}
+
+/* Avoid absolute positioning for buttons if possible */
+.btn {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+  /* Consider using margin instead of absolute positioning for better responsiveness */
+  margin-top: 20px; /* Example */
+}
+
+.btn:hover {
+  background-color: #ddd;
+  color: #333;
+}
+
+/* ... (rest of your CSS) ... */
+$carousel-control-color:             $white;
+$carousel-control-width:             15%;
+$carousel-control-opacity:           .5;
+$carousel-control-hover-opacity:     .9;
+$carousel-control-transition:        opacity .15s ease;
+
+$carousel-indicator-width:           30px;
+$carousel-indicator-height:          3px;
+$carousel-indicator-hit-area-height: 10px;
+$carousel-indicator-spacer:          3px;
+$carousel-indicator-opacity:         .5;
+$carousel-indicator-active-bg:       $white;
+$carousel-indicator-active-opacity:  1;
+$carousel-indicator-transition:      opacity .6s ease;
+
+$carousel-caption-width:             70%;
+$carousel-caption-color:             $white;
+$carousel-caption-padding-y:         1.25rem;
+$carousel-caption-spacer:            1.25rem;
+
+$carousel-control-icon-width:        2rem;
+
+$carousel-control-prev-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
+$carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
+
+$carousel-transition-duration:       .6s;
+$carousel-transition:                transform $carousel-transition-duration ease-in-out; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)

@@ -1,0 +1,89 @@
+@charset "UTF-8";
+body {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.25rem;
+}
+
+.details {
+  display: flex; /* Use flexbox for side-by-side layout */
+  justify-content: space-between;
+  max-width: 1200px; /* Adjust as per your requirement */
+  margin: auto;
+  padding: 20px;
+}
+
+.details-left {
+  flex-basis: 60%; /* Adjust based on content */
+}
+
+.details-right {
+  flex-basis: 38%; /* Adjust based on content */
+  margin-left: 2%;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  margin-bottom: 20px;
+}
+
+.info div {
+  flex-basis: 48%;
+}
+
+.finance, .finance-section, .overview-item {
+  background: #f8f8f8;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075);
+}
+
+.finance h3, .finance-section h3, .overview-item h2 {
+  margin-bottom: 5px;
+  font-size: 1.25rem;
+}
+
+.finance p, .finance-section p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.button, .btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover, .btn:hover {
+  background-color: #0056b3;
+}
+
+.thumbnails img {
+  width: 60px;
+  height: auto;
+  margin-right: 5px;
+  cursor: pointer;
+}
